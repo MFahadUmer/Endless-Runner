@@ -1,11 +1,11 @@
-.uText{
-    display: none;
-    position: absolute;
-    top: 360px;
-    left: 370px;
-    height: 24px;
-    width: 300px;
-    font-size: 20px;
-    font-weight: bold;
-    color: green;
+.uText {
+  display: none;
+  position: absolute;
+  top: 360px;
+  left: 370px;
+  height: 24px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
 }
