@@ -30,3 +30,4 @@ export default class Model {
     return this._bgMusicPlaying;
   }
 }
+/* eslint-enable no-underscore-dangle*/

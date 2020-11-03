@@ -1,4 +1,5 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, class-methods-use-this, func-names*/
+/* eslint-disable prefer-arrow-callback, no-unused-vars */
 import 'phaser';
 import config from '../Config/config';
 import playerScoresModule from '../Config/storage';
@@ -12,15 +13,15 @@ export default class WelcomeScene extends Phaser.Scene {
     localStorage.clear();
     this.load.image(
       'bluebuttonForWelcome1',
-      '../../assets/ui/blue_button02.png'
+      '../../assets/ui/blue_button02.png',
     );
     this.load.image(
       'bluebuttonForWelcome2',
-      '../../assets/ui/blue_button03.png'
+      '../../assets/ui/blue_button03.png',
     );
     this.welcomeCatImage = this.load.image(
       'welcomeCat',
-      'assets/welcomecat.jpg'
+      'assets/welcomecat.jpg',
     );
   }
 
@@ -57,7 +58,7 @@ export default class WelcomeScene extends Phaser.Scene {
             fill: 'red',
           });
         }
-      }.bind(this)
+      }.bind(this),
     );
 
     this.input.on('pointerover', function (event, gameObjects) {
@@ -80,9 +81,10 @@ export default class WelcomeScene extends Phaser.Scene {
         config.width / 2,
         config.height / 2 - offset * 100,
         config.width,
-        config.height
-      )
+        config.height,
+      ),
     );
   }
 }
-/* eslint-enable no-undef */
+/* eslint-enable no-undef, class-methods-use-this, func-names*/
+/* eslint-enable prefer-arrow-callback, no-unused-vars */

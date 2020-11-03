@@ -14,7 +14,6 @@ import scoreApi from './Config/scoreStorageApi';
 import WelcomeScene from './Scenes/WelcomeScene';
 import './style.css';
 
-console.log(scoreApi.getScores());
 class Game extends Phaser.Game {
   constructor() {
     super(config);

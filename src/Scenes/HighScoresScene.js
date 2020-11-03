@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-/* eslint-enable no-undef */
 import 'phaser';
 import config from '../Config/config';
 import scoreApi from '../Config/scoreStorageApi';
@@ -37,3 +36,4 @@ export default class HighScoresScene extends Phaser.Scene {
     );
   }
 }
+/* eslint-enable no-undef */

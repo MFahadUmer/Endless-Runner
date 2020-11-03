@@ -45,4 +45,3 @@ const playerScoresModule = (() => {
 })();
 
 export default playerScoresModule;
-/* eslint-enable no-underscore-dangle*/
