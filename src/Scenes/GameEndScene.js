@@ -1,4 +1,5 @@
-/* eslint-disable no-undef, class-methods-use-this, prefer-arrow-callback, func-names, no-unused-vars, no-extra-bind */
+/* eslint-disable no-undef, class-methods-use-this, prefer-arrow-callback */
+/* eslint-disable func-names, no-unused-vars, no-extra-bind */
 import 'phaser';
 import playerScoresModule from '../Config/storage';
 import scoreApi from '../Config/scoreStorageApi';
@@ -59,4 +60,5 @@ export default class GameEndScene extends Phaser.Scene {
     );
   }
 }
-/* eslint-enable no-undef, class-methods-use-this, prefer-arrow-callback, func-names, no-unused-vars, no-extra-bind */
+/* eslint-enable no-undef, class-methods-use-this, prefer-arrow-callback */
+/* eslint-enable func-names, no-unused-vars, no-extra-bind */
