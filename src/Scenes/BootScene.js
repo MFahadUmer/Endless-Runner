@@ -1,15 +1,17 @@
-import "phaser";
+/* eslint-disable no-undef */
+import 'phaser';
 
 export default class BootScene extends Phaser.Scene {
   constructor() {
-    super("Boot");
+    super('Boot');
   }
 
   preload() {
-    this.load.image("logo", "assets/studioLogo.png");
+    this.load.image('logo', 'assets/studioLogo.png');
   }
 
   create() {
-    this.scene.start("Preloader");
+    this.scene.start('Preloader');
   }
 }
+/* eslint-enable no-undef */

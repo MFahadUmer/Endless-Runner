@@ -39,9 +39,10 @@ const playerScoresModule = (() => {
     return currentPlayrName;
   };
 
-  return { 
-    addScores, displayScores, displayPlayerName, addPlayerName 
+  return {
+    addScores, displayScores, displayPlayerName, addPlayerName,
   };
 })();
 
 export default playerScoresModule;
+/* eslint-enable no-underscore-dangle*/

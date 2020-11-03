@@ -1,10 +1,11 @@
-import "phaser";
-import config from "../Config/config";
-import playerScoresModule from "../Config/storage";
+/* eslint-disable no-undef, class-methods-use-this */
+import 'phaser';
+import config from '../Config/config';
+import playerScoresModule from '../Config/storage';
 
 export default class GameScene extends Phaser.Scene {
   constructor() {
-    super("Game");
+    super('Game');
   }
 
   preload() {}
@@ -13,16 +14,16 @@ export default class GameScene extends Phaser.Scene {
     this.coins = this.physics.add.sprite(
       Phaser.Math.Between(400, 800),
       400,
-      "coins"
+      'coins',
     );
     this.coins.setScale(0.5);
     this.anims.create({
-      key: "coins_anim",
-      frames: this.anims.generateFrameNumbers("coins"),
+      key: 'coins_anim',
+      frames: this.anims.generateFrameNumbers('coins'),
       frameRate: 15,
       repeat: -1,
     });
-    this.coins.play("coins_anim");
+    this.coins.play('coins_anim');
     this.physics.add.collider(this.coins, this.ground);
   }
 
@@ -40,52 +41,52 @@ export default class GameScene extends Phaser.Scene {
       0,
       config.width,
       config.height,
-      "background"
+      'background',
     );
     this.background.setOrigin(0, 0);
-    this.player = this.physics.add.sprite(40, 350, "cat");
+    this.player = this.physics.add.sprite(40, 350, 'cat');
     this.player.setScale(0.3);
     this.player.setCollideWorldBounds(true);
     this.anims.create({
-      key: "cat_walk",
-      frames: this.anims.generateFrameNumbers("cat"),
+      key: 'cat_walk',
+      frames: this.anims.generateFrameNumbers('cat'),
       frameRate: 15,
       repeat: -1,
     });
-    this.fire = this.physics.add.sprite(800, 478, "fire");
+    this.fire = this.physics.add.sprite(800, 478, 'fire');
     this.fire.setScale(0.5);
     this.anims.create({
-      key: "fire_anim",
-      frames: this.anims.generateFrameNumbers("fire"),
+      key: 'fire_anim',
+      frames: this.anims.generateFrameNumbers('fire'),
       frameRate: 15,
       repeat: -1,
     });
-    var mainGround = this.add.tileSprite(
+    const mainGround = this.add.tileSprite(
       400,
       550,
       config.width,
       100,
-      "platform"
+      'platform',
     );
     this.ground = this.physics.add.existing(mainGround, true);
-    this.scoresText = this.add.text(16, 16, "score: 0", {
-      fontSize: "32px",
-      fill: "#FFF",
+    this.scoresText = this.add.text(16, 16, 'score: 0', {
+      fontSize: '32px',
+      fill: '#FFF',
     });
     this.jumpCount = 0;
     this.physics.add.collider(this.player, this.ground);
     this.physics.add.collider(this.fire, this.ground);
-    this.player.play("cat_walk");
-    this.fire.play("fire_anim");
+    this.player.play('cat_walk');
+    this.fire.play('fire_anim');
     this.cursorKeys = this.input.keyboard.createCursorKeys();
     this.physics.add.collider(this.player, this.ground);
     this.physics.add.collider(this.player, this.fire);
     this.addCoin();
     this.physics.add.collider(this.coins, this.ground);
     this.firePass = 0;
-    this.fire2 = this.physics.add.sprite(810, 478, "fire");
+    this.fire2 = this.physics.add.sprite(810, 478, 'fire');
     this.fire2.setScale(0.5);
-    this.fire2.play("fire_anim");
+    this.fire2.play('fire_anim');
     this.physics.add.collider(this.fire2, this.ground);
   }
 
@@ -101,14 +102,14 @@ export default class GameScene extends Phaser.Scene {
   update() {
     if (this.gameEndVar) {
       playerScoresModule.addScores(this.scores);
-      this.scene.start("GameEnd");
+      this.scene.start('GameEnd');
     }
     this.background.tilePositionX += 0.5;
     this.fire.x -= 3;
     if (this.fire.x < 0) {
       this.fire.x = 800;
       this.updateScores(10);
-      ++this.firePass;
+      this.firePass += 1;
     }
     if (this.fire2.x < 0) {
       this.fire2.x = 800;
@@ -128,7 +129,7 @@ export default class GameScene extends Phaser.Scene {
       this.coins,
       this.collectCoin,
       null,
-      this
+      this,
     );
     this.physics.add.overlap(this.player, this.fire, this.gameEnd, null, this);
     this.physics.add.overlap(this.player, this.fire2, this.gameEnd, null, this);
@@ -152,7 +153,7 @@ export default class GameScene extends Phaser.Scene {
   jump() {
     const isJumpDown = Phaser.Input.Keyboard.JustDown(this.cursorKeys.space);
     if (isJumpDown && (this.player.body.touching.down || this.jumpCount < 1)) {
-      ++this.jumpCount;
+      this.jumpCount += 1;
       this.player.setVelocityY(-200);
     }
     if (this.player.body.touching.down) {
@@ -160,3 +161,4 @@ export default class GameScene extends Phaser.Scene {
     }
   }
 }
+/* eslint-enable no-undef, class-methods-use-this */
