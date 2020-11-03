@@ -5,7 +5,6 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build2": "webpack --build",
     "build": "webpack --mode production",
     "server": "webpack-dev-server",
     "start": "webpack-dev-server --mode development --open",
