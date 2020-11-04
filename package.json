@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack --mode production",
     "server": "webpack-dev-server",
     "start": "webpack-dev-server --mode development --open",
@@ -25,6 +25,7 @@
     "css-loader": "^4.3.0",
     "eslint": "^7.12.1",
     "file-loader": "^6.1.1",
+    "jest": "^26.6.3",
     "prettier": "2.1.2",
     "style-loader": "^2.0.0",
     "webpack": "^4.44.2",

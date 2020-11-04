@@ -50,11 +50,6 @@ In this project the following features were implemented.
 3. Open `http://localhost:8080/`
 4. Enjoy :)
 
-## Testing
-
-1. Run `npm i`
-2. Run `npm test`
-
 ## Author
 
 Reach out to me!
