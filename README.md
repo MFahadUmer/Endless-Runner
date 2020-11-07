@@ -23,7 +23,7 @@ The player uses keyboard space key to jump to avoid from fire and collect the co
 
 ## Live link
 
-Here is a live <a href="https://elegant-mcclintock-e1aca0.netlify.app/">link</a> to the game.
+Here is a live <a href="">link</a> to the game.
 
 ## Features
 
