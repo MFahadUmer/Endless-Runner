@@ -1,4 +1,4 @@
-/* eslint-disable no-undef, class-methods-use-this */
+/* eslint-disable no-undef, class-methods-use-this, import/no-unresolved */
 import 'phaser';
 import config from '../Config/config';
 import Button from '../Objects/Button';
@@ -77,4 +77,4 @@ export default class TitleScene extends Phaser.Scene {
     Phaser.Display.Align.In.Center(gameText, gameButton);
   }
 }
-/* eslint-enable no-undef, class-methods-use-this */
+/* eslint-enable no-undef, class-methods-use-this, import/no-unresolved */

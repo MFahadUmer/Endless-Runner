@@ -1,5 +1,5 @@
 /* eslint-disable no-undef, class-methods-use-this, func-names */
-/* eslint-disable prefer-arrow-callback, no-unused-vars */
+/* eslint-disable prefer-arrow-callback, no-unused-vars, import/no-unresolved */
 import 'phaser';
 import config from '../Config/config';
 import playerScoresModule from '../Config/storage';
@@ -87,4 +87,4 @@ export default class WelcomeScene extends Phaser.Scene {
   }
 }
 /* eslint-enable no-undef, class-methods-use-this, func-names */
-/* eslint-enable prefer-arrow-callback, no-unused-vars */
+/* eslint-enable prefer-arrow-callback, no-unused-vars, import/no-unresolved */

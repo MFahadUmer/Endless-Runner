@@ -1,4 +1,4 @@
-/* eslint-disable no-undef, class-methods-use-this */
+/* eslint-disable no-undef, class-methods-use-this, import/no-unresolved */
 import 'phaser';
 import config from '../Config/config';
 import playerScoresModule from '../Config/storage';
@@ -161,4 +161,4 @@ export default class GameScene extends Phaser.Scene {
     }
   }
 }
-/* eslint-enable no-undef, class-methods-use-this */
+/* eslint-enable no-undef, class-methods-use-this, import/no-unresolved */

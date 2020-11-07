@@ -1,4 +1,4 @@
-/* eslint-disable no-undef, no-unused-vars */
+/* eslint-disable no-undef, no-unused-vars, import/no-unresolved */
 import 'phaser';
 import config from './Config/config';
 import GameScene from './Scenes/GameScene';
@@ -33,4 +33,4 @@ class Game extends Phaser.Game {
 }
 
 window.game = new Game();
-/* eslint-enable no-undef, no-unused-vars */
+/* eslint-enable no-undef, no-unused-vars, import/no-unresolved */

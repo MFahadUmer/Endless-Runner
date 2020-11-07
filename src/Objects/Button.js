@@ -1,4 +1,4 @@
-/* eslint-disable no-undef, prefer-arrow-callback, func-names */
+/* eslint-disable no-undef, prefer-arrow-callback, func-names, import/no-unresolved */
 import 'phaser';
 
 export default class Button extends Phaser.GameObjects.Container {
@@ -42,4 +42,4 @@ export default class Button extends Phaser.GameObjects.Container {
     this.scene.add.existing(this);
   }
 }
-/* eslint-enable no-undef, prefer-arrow-callback, func-names */
+/* eslint-enable no-undef, prefer-arrow-callback, func-names, import/no-unresolved */

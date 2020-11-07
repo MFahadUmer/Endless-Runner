@@ -1,4 +1,4 @@
-/* eslint-disable no-undef, prefer-arrow-callback, func-names */
+/* eslint-disable no-undef, prefer-arrow-callback, func-names, import/no-unresolved */
 import 'phaser';
 import Button from '../Objects/Button';
 
@@ -69,4 +69,4 @@ export default class OptionsScene extends Phaser.Scene {
     }
   }
 }
-/* eslint-enable no-undef, prefer-arrow-callback, func-names */
+/* eslint-enable no-undef, prefer-arrow-callback, func-names, import/no-unresolved */

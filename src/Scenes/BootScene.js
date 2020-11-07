@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, import/no-unresolved */
 import 'phaser';
 
 export default class BootScene extends Phaser.Scene {
@@ -14,4 +14,4 @@ export default class BootScene extends Phaser.Scene {
     this.scene.start('Preloader');
   }
 }
-/* eslint-enable no-undef */
+/* eslint-enable no-undef, import/no-unresolved */

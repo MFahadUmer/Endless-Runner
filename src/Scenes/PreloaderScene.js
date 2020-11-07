@@ -1,5 +1,6 @@
 /* eslint-disable no-undef, vars-on-top, no-var, prefer-destructuring */
 /* eslint-disable prefer-arrow-callback, func-names, prefer-template, radix */
+/* eslint-disable import/no-unresolved */
 import 'phaser';
 
 export default class PreloaderScene extends Phaser.Scene {
@@ -120,3 +121,4 @@ export default class PreloaderScene extends Phaser.Scene {
 }
 /* eslint-enable no-undef, vars-on-top, no-var, prefer-destructuring */
 /* eslint-enable prefer-arrow-callback, func-names, prefer-template, radix */
+/* eslint-enable import/no-unresolved */
