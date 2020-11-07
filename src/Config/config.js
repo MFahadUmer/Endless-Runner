@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, import/no-unresolved */
 import 'phaser';
 
 export default {
@@ -15,4 +15,4 @@ export default {
     },
   },
 };
-/* eslint-enable no-undef */
+/* eslint-enable no-undef, import/no-unresolved */
